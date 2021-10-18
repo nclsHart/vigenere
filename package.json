@@ -1,0 +1,15 @@
+{
+  "name": "vigenere",
+  "version": "1.0.0",
+  "description": "Vigenere Cipher written in elm",
+  "dependencies": {},
+  "devDependencies": {
+    "elm-test": "^0.19.1-revision7"
+  },
+  "author": {
+    "name": "Nicolas Hart",
+    "email": "contact@nclshart.net",
+    "web": "https://nclshart.net"
+  },
+  "license": "MIT"
+}
