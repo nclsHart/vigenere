@@ -12,6 +12,8 @@
     "elm": "^0.19.1-5"
   },
   "devDependencies": {
-    "elm-test": "^0.19.1-revision7"
+    "@parcel/transformer-elm": "^2.0.0",
+    "elm-test": "^0.19.1-revision7",
+    "parcel": "^2.0.0"
   }
 }

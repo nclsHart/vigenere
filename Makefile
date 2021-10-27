@@ -4,6 +4,14 @@ default: help
 install: ## Install dependencies
 	@npm install
 
+.PHONY: build
+build: ## Build project
+	@npx parcel build src/index.html
+
+.PHONY: dev
+dev: ## Build project and launch development server
+	@npx parcel src/index.html
+
 .PHONY: test
 test: ## Run tests
 	@npx elm-test
