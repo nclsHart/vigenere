@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50 py-5;
+}
+
+h1 {
+    @apply text-center text-3xl font-bold text-indigo-500 mb-8;
+}
+
+h2 {
+    @apply text-xl font-bold text-gray-600 mb-4;
+}
+
+label {
+    @apply block mb-2 text-gray-600;
+}
+
+textarea {
+    @apply w-full mb-4 h-28 px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300;
+}
+
+button {
+    @apply w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none;
+}
+
+pre {
+    @apply border-dashed whitespace-pre-wrap break-all border-4 border-indigo-300 p-3;
+}
