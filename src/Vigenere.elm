@@ -3,7 +3,7 @@ module Vigenere exposing (..)
 import Browser
 import Html exposing (Attribute, Html, button, div, h1, h2, input, label, pre, text, textarea)
 import Html.Attributes exposing (..)
-import Html.Events exposing (onClick, onInput, onCheck)
+import Html.Events exposing (onCheck, onClick, onInput)
 import Vigenere.Cypher exposing (decrypt, encrypt)
 
 
@@ -135,7 +135,16 @@ view model =
             [ label [] [ text "Content" ]
             , textarea [ placeholder (contentPlaceholder model.mode), value model.content, onInput ChangeContent ] []
             ]
-        , button [ onClick (if model.mode == EncryptMode then Encrypt else Decrypt) ] [ text (buttonText model.mode) ]
+        , button
+            [ onClick
+                (if model.mode == EncryptMode then
+                    Encrypt
+
+                 else
+                    Decrypt
+                )
+            ]
+            [ text (buttonText model.mode) ]
         , if model.result /= "" then
             div [ class "mt-8" ]
                 [ h2 [] [ text (resultTitle model.mode) ]

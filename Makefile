@@ -8,6 +8,10 @@ install: ## Install dependencies
 build: ## Build project
 	@npx parcel build src/index.html
 
+.PHONY: cs
+cs: ## Check and fix coding style issues
+	@npx elm-format src/ tests/ --yes
+
 .PHONY: dev
 dev: ## Build project and launch development server
 	@npx parcel src/index.html

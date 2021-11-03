@@ -8,13 +8,17 @@
     "web": "https://nclshart.net"
   },
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "prepare": "husky install"
   },
+  "dependencies": {},
   "devDependencies": {
     "@parcel/transformer-elm": "^2.0.0",
     "autoprefixer": "^10.3.7",
     "elm": "^0.19.1-5",
+    "elm-format": "^0.8.5",
     "elm-test": "^0.19.1-revision7",
+    "husky": "^7.0.4",
     "parcel": "^2.0.0",
     "postcss": "^8.3.11",
     "tailwindcss": "^2.2.17"
