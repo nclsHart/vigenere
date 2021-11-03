@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    @apply text-center text-3xl font-bold text-indigo-500 mb-8;
+    @apply text-center text-4xl font-bold text-indigo-500 mb-8;
 }
 
 h2 {
@@ -19,7 +19,7 @@ label {
 }
 
 textarea {
-    @apply w-full mb-4 h-28 px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300;
+    @apply w-full h-28 px-3 py-2 bg-white placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300;
 }
 
 button {
@@ -28,4 +28,29 @@ button {
 
 pre {
     @apply border-dashed whitespace-pre-wrap break-all border-4 border-indigo-300 p-3;
+}
+
+.form-row {
+    @apply mb-4;
+}
+
+.modes {
+    @apply flex gap-4;
+}
+
+.mode {
+    @apply flex items-center flex-1 bg-white border border-gray-300 rounded-md p-3;
+}
+
+.mode:hover {
+    @apply cursor-pointer;
+}
+
+.mode input[type="radio"] {
+    @apply ml-2 mr-3 h-5 w-5 appearance-none border border-gray-300 rounded-full;
+}
+
+.mode input[type="radio"]:checked {
+    @apply border-indigo-600;
+    border-width: 6px;
 }
