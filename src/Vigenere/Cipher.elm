@@ -1,4 +1,4 @@
-module Vigenere.Cypher exposing (decrypt, encrypt)
+module Vigenere.Cipher exposing (decrypt, encrypt)
 
 import String.Extra exposing (removeAccents)
 

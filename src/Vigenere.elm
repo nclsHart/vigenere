@@ -4,7 +4,7 @@ import Browser
 import Html exposing (Attribute, Html, button, div, h1, h2, input, label, pre, text, textarea)
 import Html.Attributes exposing (..)
 import Html.Events exposing (onCheck, onClick, onInput)
-import Vigenere.Cypher exposing (decrypt, encrypt)
+import Vigenere.Cipher exposing (decrypt, encrypt)
 
 
 
@@ -113,7 +113,7 @@ buttonText mode =
 view : Model -> Html Msg
 view model =
     div [ class "max-w-xl mx-auto px-4" ]
-        [ h1 [] [ text "Vigenere cypher" ]
+        [ h1 [] [ text "Vigenere cipher" ]
         , div [ class "form-row" ]
             [ label [] [ text "Choose your mode" ]
             , div [ class "modes" ]

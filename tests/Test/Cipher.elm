@@ -1,13 +1,13 @@
-module Test.Cypher exposing (..)
+module Test.Cipher exposing (..)
 
 import Expect
 import Test exposing (..)
-import Vigenere.Cypher exposing (decrypt, encrypt)
+import Vigenere.Cipher exposing (decrypt, encrypt)
 
 
 suite : Test
 suite =
-    describe "Cypher module"
+    describe "Cipher module"
         [ describe "encrypt"
             [ test "without spaces" <|
                 \_ ->
